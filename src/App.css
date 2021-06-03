@@ -1,0 +1,31 @@
+.card-style {
+  text-align: center;
+  border-radius: 10px;
+  background-color: #3c3c3c;
+  margin: 40px;
+  padding-top: 10px;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-price {
+  margin: 10px;
+}
+
+.margin-10 {
+  margin: 10px;
+}
+
+.card-btns {
+  position: relative;
+}
+
+.card-img {
+  box-sizing: content-box;
+  max-width: fit-content;
+  max-height: fit-content;
+  border-radius: 50%;
+}
