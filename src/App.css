@@ -21,6 +21,7 @@
 
 .card-btns {
   position: relative;
+  bottom: 0;
 }
 
 .card-img {
@@ -28,4 +29,53 @@
   max-width: fit-content;
   max-height: fit-content;
   border-radius: 50%;
+}
+
+.hide-form {
+  display: none;
+}
+
+.card-margin {
+  margin-top: 50px;
+}
+
+.form-margin {
+  margin: 0 50px 50px 50px;
+}
+
+.floatting-button-container {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+}
+
+.floatting-button-container a {
+  text-decoration: none;
+  color: #375a7f;
+}
+
+.floatting-button-container a:hover {
+  text-decoration: none;
+  color: #375a7f;
+}
+
+.search-bar {
+  background-color: #3c3c3c;
+  border: 1px solid #000;
+  color: #fff;
+}
+
+.search-bar:hover {
+  background-color: #454545;
+  border: 1px solid #000;
+  color: #fff;
+}
+
+.search-bar-icon {
+  background-color: #3c3c3c;
+  border: 1px solid #000;
+}
+
+.search-bar-input {
+  width: 400px;
 }

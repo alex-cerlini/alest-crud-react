@@ -57,42 +57,48 @@ const Card = () => {
     getCards()
   }, [])
 
+  const showForm = () => {
+    document.getElementById('form-main').classList.remove('hide-form')
+    document.getElementById('floatting-button-add').classList.add('hide-form')
+  }
+
   return (
     
     <div>
-      <Form {...{addOrEdit, currentId, cards}} />
+      <div className="form-margin">
+        <Form {...{addOrEdit, currentId, cards}}/>
+      </div>
       <div className="row container-fluid col-md-10 offset-md-1">
       {cards.map(card => (
-          <div className="card-style col-md-3" key={card.id}>
+          <div className="card-style col-md-2" key={card.id}>
             <p className="product-title">{card.title}</p>
               <img 
-                className="card-img"
+                className="card-img rounded-circle"
                 src={card.urlImage} 
                 alt={`Imagem de ${card.title}`}
                 />
             <h5 className="product-price">{card.price}</h5>
-            <div className="row card-btns">
-              <div className="col-md-6">
-                <button
+              <div className="row card-btns">
+                <div className="col-md-6" onClick={showForm}>
+                  <button
+                    className="btn btn-primary btn-block form-control"
+                    onClick={ () => setCurrentId(card.id)}
+                    >
+                    <i className="material-icons">edit</i>
+                  </button>
+                </div>
+                <div className="col-md-6">
+                  <button 
                   className="btn btn-primary btn-block form-control"
-                  onClick={ () => setCurrentId(card.id)}
+                  onClick={ () => deleteCard(card.id)}
                   >
-                  <i className="material-icons">edit</i>
-                </button>
-              </div>
-              <div className="col-md-6">
-                <button 
-                className="btn btn-primary btn-block form-control"
-                onClick={ () => deleteCard(card.id)}
-                >
-                  <i className="material-icons">delete</i>
-                </button>
-              </div>
+                    <i className="material-icons">delete</i>
+                  </button>
+                </div>
             </div>
           </div>
         )
       )}
-
       </div>
     </div>
   )
