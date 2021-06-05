@@ -11,6 +11,7 @@ const Card = () => {
 
   const [cards, setCards] = useState([])
   const [currentId, setCurrentId] = useState('')
+  const [search, setSearch] = useState('')
 
   const addOrEdit = async (AppObject) => {
     try {
@@ -44,6 +45,15 @@ const Card = () => {
   }
 
   const getCards = async () => {
+    if(search != ''){
+      await db.collection('produtos').where('title', '>=', search ).onSnapshot((querySnapshot) => {
+        const docs = [];
+      querySnapshot.forEach((doc) => {
+        docs.push({...doc.data(), id:doc.id})
+      })
+      setCards(docs)
+    })
+    } else { 
     await db.collection('produtos').onSnapshot((querySnapshot) => {
       const docs = [];
     querySnapshot.forEach((doc) => {
@@ -51,11 +61,12 @@ const Card = () => {
     })
     setCards(docs)
   })
+    }
 }
 
   useEffect( () => {
     getCards()
-  }, [])
+  }, [getCards, search])
 
   const showForm = () => {
     document.getElementById('form-main').classList.remove('hide-form')
@@ -65,9 +76,19 @@ const Card = () => {
   return (
     
     <div>
+
       <div className="form-margin">
         <Form {...{addOrEdit, currentId, cards}}/>
       </div>
+
+      <div className="col-md-10 offset-md-1">
+            <input
+              type="text"
+              className="form-control-lg search-bar"
+              onChange={ (e) => setSearch(e.target.value)}
+            />
+        </div>
+
       <div className="row container-fluid col-md-10 offset-md-1">
       {cards.map(card => (
           <div className="card-style col-md-2" key={card.id}>
