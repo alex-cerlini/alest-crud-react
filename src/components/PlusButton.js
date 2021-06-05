@@ -13,7 +13,7 @@ const PlusButton = () => {
       <div className="floatting-button-container" id="floatting-button-add">
          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a href="#" onClick={showForm}>
-          <i className="large material-icons">add_circle</i>
+          <i className="large material-icons floatting-button">add_circle</i>
         </a>
       </div>
     </>
