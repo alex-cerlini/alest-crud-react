@@ -71,6 +71,7 @@ const Form = (props) => {
     } else {
       getCardById(props.currentId)
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.currentId])
 
   const hideForm = () => {
@@ -82,8 +83,7 @@ const Form = (props) => {
     <div id="form-main" className="hide-form">
       <div className="jumbotron jumbotron-fluid text-center">
         <div className="container">
-          <h1 className="display-4">~Produtos~</h1>
-          <p className="lead">Cadastre novos produtos aqui</p>
+          <p className="lead">{props.currentId === '' ? 'Cadastre novos' : 'Atualize os'} produtos aqui</p>
         </div>
       </div>
 
