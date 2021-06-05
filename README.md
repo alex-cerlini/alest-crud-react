@@ -65,6 +65,7 @@
 ### Run crud_alest
 
 - Run `npm start`
+- Acess in localhost:3000
 
 ---
 
