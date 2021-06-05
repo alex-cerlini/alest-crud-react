@@ -1,76 +1,97 @@
-# Getting Started with Create React App
+# CRUD_Alest_Consultoria
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
 
-## Download libs:
+<p align="center">A ReactJS challenge for a Internship vacancy
 
-In the project directory, you have to do:
+</p>
 
-### `npm install`
+<h4 align="center"> 
+	🚧  CRUD-ReactJS 🚀 <a href="https://fb-crud-react-79886.web.app/" target="_blank">Preview on Firebase Hosting</a>  🚧
+</h4>
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `yarn start`
+- [x] Receive data from user and add to Firestore database
+- [x] Return all data in Card Format
+- [x] Edit button Working with Firestore
+- [x] Delete button working with Firestore
+- [x] Hide Form default
+- [x] Show form when tap plus or edit button
+- [x] Search bar working with title data
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## App Preview
 
-### `yarn test`
+<p>
+  <img src="src/printscreen/print1.png" width="200" style="margin: 10px;">
+  <img src="src/printscreen/print2.png" width="200" style="margin: 10px;">
+  <img src="src/printscreen/print3.png" width="200" style="margin: 10px;">
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+## Developer Quick start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. [Install Pre-requisites](#pre-requisites)
+1. [Clone](#clone-the-repo)
+1. [Download third party libs](#download-third-party-libs)
+1. [Run bmi_calculator](#run-bmi_calculator-on-a-device-or-simulator)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pre-requisites
 
-### `yarn eject`
+- Install [NodeJS](https://nodejs.org/en/).
+- Setup your [favorite code editor](https://flutter.dev/docs/get-started/editor) (I recommend using [VS Code](https://code.visualstudio.com/))
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Clone the repo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    git clone git@github.com:alex-cerlini/alest-crud-react.git
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+### Download Third Party Libs
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. run `npm install` to download all the librarys used in project (do it or have a million error in project)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### Run crud_alest
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Run `npm start`
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Technology
 
-### Making a Progressive Web App
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript
+- ReactJS
+- NodeJS
+- Firestore database
+- Firestore hosting
+- Toastify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+<a href="https://github.com/alex-cerlini">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/56663683?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Alexander Andrade Cerlini</b></sub></a> <a href="https://github.com/alex-cerlini" title="Alex Cerlini">🚀</a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Feito com <span style="color: red">♥</span>.
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![Linkedin Badge](https://img.shields.io/badge/-AlexCerlini-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/alexander-andrade-cerlini-560982119/)](https://www.linkedin.com/in/alexander-andrade-cerlini-560982119/)
+[![Gmail Badge](https://img.shields.io/badge/-alexcerlinii@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:alexcerlinii@gmail.com)](mailto:alexcerlinii@gmail.com)
