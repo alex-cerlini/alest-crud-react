@@ -1,3 +1,5 @@
+/* ################ CARD STYLE ################ */
+
 .card-style {
   background-color: #3c3c3c;
   display: flex;
@@ -18,33 +20,31 @@
   margin: 10px;
 }
 
-.margin-10 {
-  margin: 10px;
-}
-
-.card-btns {
-  position: relative;
-  bottom: 0;
-}
-
 .card-img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-image: url("https://cdn.onlinewebfonts.com/svg/img_357713.png");
-}
-
-.hide-form {
-  display: none;
 }
 
 .card-margin {
   margin-top: 50px;
 }
 
-.form-margin {
-  margin: 0 50px 50px 50px;
+/* ################ SEARCH BAR ################ */
+
+.search-bar {
+  background-color: #3c3c3c;
+  border: 1px solid #000;
+  color: #fff;
 }
+
+.search-bar:hover {
+  background-color: #454545;
+  border: 1px solid #000;
+  color: #fff;
+}
+
+/* ################ FLOATTING BUTTON ################ */
 
 .floatting-button-container {
   position: fixed;
@@ -62,26 +62,16 @@
   color: #375a7f;
 }
 
-.search-bar {
-  background-color: #3c3c3c;
-  border: 1px solid #000;
-  color: #fff;
+.floatting-button {
+  font-size: 60px;
 }
 
-.search-bar:hover {
-  background-color: #454545;
-  border: 1px solid #000;
-  color: #fff;
+.floatting-button:hover {
+  color: #5489c2;
+  transition: 1s;
 }
 
-.search-bar-icon {
-  background-color: #3c3c3c;
-  border: 1px solid #000;
-}
-
-.search-bar-input {
-  width: 400px;
-}
+/* ################ HEADER ################ */
 
 .header {
   background-color: #454545;
@@ -90,11 +80,18 @@
   padding: 5px;
 }
 
-.floatting-button {
-  font-size: 60px;
+/* ################ FORM ################ */
+
+.hide-form {
+  display: none;
 }
 
-.floatting-button:hover {
-  color: #5489c2;
-  transition: 1s;
+.form-margin {
+  margin: 0 50px 50px 50px;
+}
+
+/* ################ GENERIC ################ */
+
+.margin-10 {
+  margin: 10px;
 }
